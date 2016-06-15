@@ -5,6 +5,10 @@ class UpdatesController < ApplicationController
     def save
       true
     end
+
+    def valid?
+      true
+    end
   end
 
   steps :first, :second, :last_step

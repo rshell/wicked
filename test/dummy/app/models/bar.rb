@@ -6,4 +6,9 @@ class Bar
   def save
     @value
   end
+
+  def valid?
+    @value
+  end
+
 end
