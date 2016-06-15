@@ -26,9 +26,9 @@ module Wicked
       helper_method :wizard_path,     :next_wizard_path, :previous_wizard_path,
                     :step,            :wizard_steps,     :current_step?,
                     :past_step?,      :future_step?,     :previous_step?,
-                    :next_step?
+                    :next_step?, :last_step?
       # Set @step and @next_step variables
-      before_action :setup_wizard
+      before_action :setup_wizard, only: [:update,:show]
     end
 
     # forward to first step with whatever params are provided
